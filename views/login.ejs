@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include('./partials/head') %>
+    </head>
+    <body>
+        <%- include('./partials/header') %>
+        <div class="login">
+            <form method="post">
+                <input type="text" placeholder="Enter username..." name="username" id="username">
+                <input type="password" placeholder="Password" name="password" id="password">
+                <input type="submit" value="Login">
+            </form>
+            <label for="registerLink">Not registered?</label>
+            <a name="registerLink" href="/register">Register</a>
+        </div>
+    </body>
+</html>

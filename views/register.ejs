@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include('./partials/head') %>
+    </head>
+    <body>
+        <%- include('./partials/header') %>
+        <div class="register">
+            <form action="/register" method="post">
+                <input type="text" placeholder="Enter username..." name="username" id="username">
+                <input type="password" placeholder="Password" name="password" id="password">
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include('./partials/head') %>
+    </head>
+    <body>
+        <%- include('./partials/header') %>
+        <div class="content">
+            <% if(locals.session) { %>
+                <h1>Hello <%= locals.session.userid %>!</h1>
+            <% } else { %>
+                <h1>Please login.</h1>
+            <% } %>
+        </div>
+    </body>
+</html>

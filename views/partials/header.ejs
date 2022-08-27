@@ -1,0 +1,26 @@
+<div class="banner">
+    <h1>BoatBoys Playground</h1>
+</div>
+<div class="navbar">
+    <ul>
+        <li>
+            <a href="/">Home</a>
+        </li>
+        <li>
+            <a href="/draw">Draw</a>
+        </li>
+        <li>
+            <a href="#">Story</a>
+        </li>
+        <li>
+            <a href="/rps">RPS</a>
+        </li>
+        <li>
+            <% if(locals.session) { %>
+                <a href="/logout">LOGOUT</a>
+            <% } else { %>
+                <a href="/login">LOGIN</a>
+            <% } %>
+        </li>
+    </ul>
+</div>
